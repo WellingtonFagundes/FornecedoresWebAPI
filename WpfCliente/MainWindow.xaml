@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfCliente.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="480" Width="550">
+    <Grid>
+        <DataGrid x:Name="gridFornecedores" HorizontalAlignment="Left" VerticalAlignment="Top" Height="176"
+                  Width="525" SelectedCellsChanged="gridFornecedores_SelectedCellsChanged">
+        </DataGrid>
+        
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top"></Label>
+        <TextBox x:Name="txtID" HorizontalAlignment="Right" Height="23" Margin="0,184,279,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="200"></TextBox>
+        
+        <Label Content="Nome:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,210,0,0"></Label>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top"
+                 TextWrapping="Wrap" Width="290" Margin="0,210,165,0"></TextBox>
+        
+        <Label Content="CNPJ:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,236,0,0"></Label>
+        <TextBox x:Name="txtCNPJ" HorizontalAlignment="Right" VerticalAlignment="Top" TextWrapping="Wrap" 
+                 Width="290" Height="23" Margin="0,235,165,0"></TextBox>
+        
+        <Label Content="Endereço:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,262,0,0"></Label>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Right" VerticalAlignment="Top" TextWrapping="Wrap"
+                 Height="23" Width="290" Margin="0,260,165,0"></TextBox>
+        
+        <Label Content="Bairro:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,288,0,0"></Label>
+        <TextBox x:Name="txtBairro" HorizontalAlignment="Right" VerticalAlignment="Top" TextWrapping="Wrap"
+                 Height="23" Width="290" Margin="0,286,165,0"></TextBox>
+        
+        <Label Content="Cidade:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,314,0,0"></Label>
+        <TextBox x:Name="txtCidade" HorizontalAlignment="Right" VerticalAlignment="Top" TextWrapping="Wrap"
+                 Height="23" Width="290" Margin="0,312,165,0"></TextBox>
+        
+        <CheckBox x:Name="ckbSituacao" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,345,20,0">Situação Ativo/Inativo?</CheckBox>
+        
+        <Label Content="Data Cadastro:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,366,0,0"></Label>
+        <TextBox x:Name="txtDataCadastro" HorizontalAlignment="Right" VerticalAlignment="Top" TextWrapping="Wrap"
+                 Height="23" Width="250" Margin="0,369,165,0"></TextBox>
+        
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="15,410,0,0" Width="75" Click="btnCadastrar_Click"></Button>
+        
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="95,410,0,0" Width="75" Click="btnAlterar_Click"></Button>
+        
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="175,410,0,0" Width="75" Click="btnExcluir_Click"></Button>
+        
+        <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" VerticalAlignment="Top"
+               RenderTransformOrigin="0.023,0.453"  Margin="255,410,0,0" Width="75" Click="btnListar_Click"></Button>
+        
+        <Button x:Name="btnPesquisar" Content="Pesquisar ID" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="452,184,0,0" Width="75" Click="btnPesquisar_Click"></Button>
+         
+    </Grid>
+</Window>
